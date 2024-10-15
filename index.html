@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Particle Pattern</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #000;
+        }
+        #particle-container {
+            width: 40vw;
+            height: 40vw;
+            position: relative;
+        }
+        canvas {
+            width: 100%;
+            height: 100%;
+        }
+        .pattern-button {
+            position: absolute;
+            top: 10px;
+            z-index: 1;
+        }
+        #button1 { left: 10px; }
+        #button2 { left: 70px; }
+        #button3 { left: 130px; }
+    </style>
+</head>
+<body>
+    <div id="particle-container">
+        <canvas id="particle-canvas"></canvas>
+        <button id="button1" class="pattern-button">Pattern 1</button>
+        <button id="button2" class="pattern-button">Pattern 2</button>
+        <button id="button3" class="pattern-button">Pattern 3</button>
+    </div>
+    <script src="ResponsiveParticlePattern.js"></script>
+</body>
+</html>
